@@ -1,4 +1,4 @@
-# Compte-rebours
+# Compte-à-rebours
 
 Voici ma version du compte à rebours :
 
