@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <form>
+        <div class="inline-form">
+            <button type="button" id="mute-btn" class="btn">
+                <img src="./png/002-muet.png" alt="Muet" class="img-icon-btn" />
+            </button>
+            <button type="button" id="sound-btn" class="btn">
+                <img src="./png/001-volume-eleve.png" alt="Son" class="img-icon-btn" />
+            </button>
+        </div>
+        <label for="countdown-preset">Temps pré-sélectionné:</label>
+        <select id="countdown-preset" name="countdown-preset"></select>
+        <br />
+        <br />
+        <div class="inline-form">
+            <input type="number" id="minutes" min="0" max="59" value="01" />
+            <b>:</b>
+            <input type="number" id="seconds" min="0" max="59" value="00" />
+            <button type="button" id="start-btn" class="btn">
+                <img src="./png/003-jouer.png" alt="Démmarrer" class="img-icon-btn" />
+            </button>
+            <button type="button" id="stop-btn" class="btn">
+                <img src="./png/004-pause.png" alt="Pause" class="img-icon-btn" />
+            </button>
+            <button type="button" id="reset-btn" class="btn">
+                <img src="./png/005-arretez.png" alt="Réinitialiser" class="img-icon-btn" />
+            </button>
+        </div>
+        <div class="progress">
+            <div id="progress-bar" class="progress-bar" style="--total-time:0s;"></div>
+        </div>
+        <p>Vous avez fait <span id="compteur-de-serie">0</span> série(s).</p>
+    </form>
+</body>
+<script src="./Script.js"></script>
+
+</html>
