@@ -154,6 +154,9 @@ Only a web browser, it doesn't need the internet for it to work.
 - [x] Add a preset for the counter.
 - [x] Add a progress bar.
     - [x] Change the color according to the remaining percentage.
+- [ ] Translation
+    - [ ] English
+    - [x] French
 
 See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a full list of proposed features (and known issues).
 
