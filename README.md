@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT MAIN -->
-<center>
+<div align="center">
 
 # Countdown
 
@@ -20,7 +20,7 @@ _My personal countdown!_
 . 
 [Request Feature](https://github.com/JLP0578/Compte-a-rebours/issues/)
 
-</center>
+</div>
 
 <!-- SOMMAIRE -->
 <details>
@@ -73,7 +73,7 @@ If my project serves me, it can serve you, if you have different needs, I can on
 <!-- IMAGES -->
 ### Screenshots
 
-<center>
+<div align="center">
 
 ![Img1][img1-shield]
 neutral counter 
@@ -84,7 +84,7 @@ counter at -00:41
 ![Img3][img3-shield]
 counter at -00:09
 
-</center>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
