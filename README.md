@@ -202,11 +202,11 @@ See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a 
 <!-- IMAGES -->
 [logo-shield]: https://placehold.co/600x400?text=Your+Screenshot+here]
 
-[img1-shield]: https://raw.githubusercontent.com/JLP0578/Compte-a-rebours/5be395ca06001c53943b7a4d841769d41395c163/README/png/Compte%20%C3%A0%20rebours%20en%20ligne%20neutre.png
+[img1-shield]: https://github.com/JLP0578/Compte-a-rebours/blob/master/README/png/Compte%20%C3%A0%20rebours%20en%20ligne%20neutre.png?raw=true
 
-[img2-shield]: https://raw.githubusercontent.com/JLP0578/Compte-a-rebours/5be395ca06001c53943b7a4d841769d41395c163/README/png/Compte%20%C3%A0%20rebours%20en%20ligne%20en%20marche%2041s.png
+[img2-shield]: https://github.com/JLP0578/Compte-a-rebours/blob/master/README/png/Compte%20%C3%A0%20rebours%20en%20ligne%20en%20marche%2041s.png?raw=true
 
-[img3-shield]: https://raw.githubusercontent.com/JLP0578/Compte-a-rebours/5be395ca06001c53943b7a4d841769d41395c163/README/png/Compte%20%C3%A0%20rebours%20en%20ligne%20en%20marche%209s.png
+[img3-shield]: https://github.com/JLP0578/Compte-a-rebours/blob/master/README/png/Compte%20%C3%A0%20rebours%20en%20ligne%20en%20marche%209s.png?raw=true
 
 <!-- BADGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/JLP0578/Compte-a-rebours.svg?style=flat
