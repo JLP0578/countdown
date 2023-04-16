@@ -76,12 +76,15 @@ If my project serves me, it can serve you, if you have different needs, I can on
 <div align="center">
 
 ![Img1][img1-shield]
+    
 neutral counter 
 
 ![Img2][img2-shield]
+    
 counter at -00:41
 
 ![Img3][img3-shield]
+    
 counter at -00:09
 
 </div>
@@ -157,6 +160,7 @@ Only a web browser, it doesn't need the internet for it to work.
 - [ ] Translation
     - [ ] English
     - [x] French
+- [ ] Skeleton animation
 
 See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a full list of proposed features (and known issues).
 
