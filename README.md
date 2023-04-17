@@ -199,6 +199,8 @@ See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a 
 | **Request Feature** | [GitHub Request Feature](https://github.com/JLP0578/Compte-a-rebours/issues) |
 | **Report a security vulnerability** | See [SECURITY.md](SECURITY.md) |
 | **View license** | See [LICENSE.md](LICENSE.md) |
+| **Live Demo** | Click [GitHubPage](https://jlp0578.github.io/countdown/) |
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
