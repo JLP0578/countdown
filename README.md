@@ -14,6 +14,8 @@ _My personal countdown!_
 [![Starts][stars-shield]][stars-url]
 [![License][license-shield]][license-url]
 
+[Live Demo](https://jlp0578.github.io/countdown/)
+.
 [Documentation](https://github.com/JLP0578/Compte-a-rebours/wiki)
 . 
 [Report Bug](https://github.com/JLP0578/Compte-a-rebours/issues/)
