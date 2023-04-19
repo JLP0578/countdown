@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="cache-control" content="no-cache">
+        <title>QUnit Script Test</title>
+        <!-- QUnit (Style, Script) -->
+        <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.4.css">
+        <script src="https://code.jquery.com/qunit/qunit-2.19.4.js"></script>
+    </head>
+    <body>
+        <h1 id="qunit-header">QUnit Script Test</h1>
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+        <div id="qunit-fixture">
+            <div id="container"></div>
+        </div>
+
+        <!-- ASSETS SCRIPTS -->
+        <script src="../assets/scripts/outils.js"></script>
+        <script src="../assets/scripts/main_script.js"></script>
+
+        <!-- TEST SCRIPTS -->
+        <script src="./scripts/outils.test.js"></script>
+        <script src="./scripts/main_script.test.js"></script>
+    </body>
+</html>
