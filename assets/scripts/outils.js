@@ -27,10 +27,12 @@ _cn = (cn) => document.getElementsByClassName(cn);
 addLeadingZero = (e) => e.target.value = twoDigits(e.target.value);
 
 twoDigits = (string) => {
+    string = string.toString();
     if(regexp_threeIntInString.test(string)) {
         string = string.replace(/^(0+)/g, '');
-    } else if (regexp_oneIntInString.test(string)) {
-        string = string.toString().padStart(2, "0");
+        if(string.length > 2) string = "60";
+    } else if(regexp_oneIntInString.test(string)) {
+        string = string.padStart(2, "0");
     }
 
     return string;

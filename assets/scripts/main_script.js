@@ -1,5 +1,6 @@
 /* RegExp */
 let regexp_inputNumber = /^([0-9]){2}$/;
+let regexp_time = /^(?!00:00)(?:[01]\d|2[0-3]):[0-5]\d$/;
 
 let countdownIntervalId;
 let startTime;
@@ -188,31 +189,31 @@ function updateCountdownPreset() {
 function loadPreset() {
     for (let i = 0; i < 6; i++) {
         const minutes = twoDigits(i);
-        ajouterOption(minutes+":00");    
-        ajouterOption(minutes+":30");  
+        let option = ajouterOption(minutes+":00");
+        if(option) countdownPreset.add(option);
+        option = ajouterOption(minutes+":30");
+        if(option) countdownPreset.add(option);
     }
+    return countdownPreset;
 }
 function ajouterOption(value) {
-    if(value == "00:00") return false;
-    let option = document.createElement("option");
-    option.text = value;
-    option.value = value;
-    if(value == "01:00") option.selected = true;
-    countdownPreset.add(option);
+    let option;
+    if(regexp_time.test(value)) {
+        option = document.createElement("option");
+        option.text = value;
+        option.value = value;
+        if(value == "01:00") option.selected = true;
+    } else option = false;
+
+    return option;
 }
 
 /* SAVE PRESET IF RESET */
-function updateCountPreset(e) {
-    if(regexp_inputNumber.test(e.target.value)) {
-        const minutes = parseInt(minutesInput.value);
-        const seconds = parseInt(secondsInput.value);
-        
-        lastRemainingTimeMinutes = minutes;
-        lastRemainingTimeSecondes = seconds;
-    } else {
-        e.target.value = twoDigits(e.target.value);
-        updateCountPreset(e);
-    }
+function updateCountPreset() {
+    const minutes = parseInt(minutesInput.value);
+    const seconds = parseInt(secondsInput.value);
+    lastRemainingTimeMinutes = minutes;
+    lastRemainingTimeSecondes = seconds;
 }
 
 /* OUTILS */
