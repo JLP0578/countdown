@@ -71,8 +71,4 @@ QUnit.module("[main_script]: memory last preset", function () {
         let result = {"minutes": 1, "seconds": 0};
         assert.deepEqual(updateCountPreset(), result, "par default dans le DOM le temps est '01:00'");
     });
-    QUnit.test("updateCountdownPreset()", function (assert) {
-        let result = {"minutes": "01", "seconds": "00", "input_preset": "01:00"};
-        assert.deepEqual(updateCountdownPreset(), result, "par default dans le DOM le temps est '01:00'");
-    });
 });

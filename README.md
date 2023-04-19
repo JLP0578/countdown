@@ -16,6 +16,8 @@ _My personal countdown!_
 
 [Live Demo](https://jlp0578.github.io/countdown/)
 .
+[Test Live](https://jlp0578.github.io/countdown/tests)
+.
 [Documentation](https://github.com/JLP0578/Compte-a-rebours/wiki)
 . 
 [Report Bug](https://github.com/JLP0578/Compte-a-rebours/issues/)
@@ -45,11 +47,12 @@ _My personal countdown!_
             <ul>
                 <li><a href="#prerequisites">Prerequisites</a></li>
                 <li><a href="#installation">Installation</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#color-reference">Color Reference</a></li>
             </ul>
         </li>
         <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#contributing">Contributing</a></li>
-        <li><a href="#license">License</a></li>
         <li><a href="#license">License</a></li>
         <li><a href="#support">Support</a></li>
     </ul>
@@ -96,11 +99,14 @@ counter at -00:09
 <!-- BUILD -->
 ### Built With
 
-This project does not need internet, it does not have any CDN library or other.
+This project use native language.
+- Language: 
+[![CSS3][CSS3.com]][CSS3-url]
+[![HTML5][HTML5.com]][HTML5-url]
+[![JavaScript][JavaScript.com]][JavaScript-url]
 
-- [![CSS3][CSS3.com]][CSS3-url]
-- [![HTML5][HTML5.com]][HTML5-url]
-- [![JavaScript][JavaScript.com]][JavaScript-url]
+- Testing: 
+[![QUnit][QUnit.com]][QUnit-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +116,7 @@ This project does not need internet, it does not have any CDN library or other.
 ### Prerequisites
 
 Only a web browser, it doesn't need the internet for it to work.
+The testing framework need internet, you can download the framework dans modify the repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,6 +138,23 @@ Only a web browser, it doesn't need the internet for it to work.
         ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- INSTALLATION -->
+### Testing
+
+1. Install the repo
+2. Open `./tests/index.html` in browser, double click on it or:
+    - In UNIX systems
+        ```sh
+        open ./tests/index.html
+        ```
+    - In Windows systems
+        ```sh
+        start ./tests/index.html
+        ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- Color Reference -->
 ### Color Reference
@@ -163,6 +187,9 @@ Only a web browser, it doesn't need the internet for it to work.
     - [ ] English
     - [x] French
 - [ ] Skeleton animation
+- [ ] Testing
+    - [x] outils.js
+    - [ ] main_script.js
 
 See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a full list of proposed features (and known issues).
 
@@ -199,7 +226,8 @@ See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a 
 | **Request Feature** | [GitHub Request Feature](https://github.com/JLP0578/Compte-a-rebours/issues) |
 | **Report a security vulnerability** | See [SECURITY.md](SECURITY.md) |
 | **View license** | See [LICENSE.md](LICENSE.md) |
-| **Live Demo** | Click [GitHubPage](https://jlp0578.github.io/countdown/) |
+| **Live Demo** | [GitHub Pages Project](https://jlp0578.github.io/countdown/) |
+| **Tests Live** | [GitHub Pages Tests](https://jlp0578.github.io/countdown/tests) |
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -232,7 +260,7 @@ See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a 
 [license-shield]: https://img.shields.io/github/license/JLP0578/Compte-a-rebours.svg?style=flat
 [license-url]: https://github.com/JLP0578/Compte-a-rebours/blob/main/LICENSE
 
-<!-- LANGUAGES -->
+<!-- OUTIlS UTILISE -->
 [CSS3.com]: https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white
 [CSS3-url]: https://developer.mozilla.org/fr/docs/Web/CSS
 
@@ -241,3 +269,6 @@ See the [open issues](https://github.com/JLP0578/Compte-a-rebours/issues) for a 
 
 [JavaScript.com]: https://img.shields.io/badge/-JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E
 [JavaScript-url]: https://developer.mozilla.org/fr/docs/Learn/JavaScript
+
+[QUnit.com]: https://img.shields.io/badge/-QUnit-6e2568?style=flat-square&logo=QUnit&logoColor=white
+[QUnit-url]: https://qunitjs.com/
