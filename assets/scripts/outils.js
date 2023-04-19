@@ -1,3 +1,7 @@
+/* RegExp */
+let regexp_oneIntInString = /^([0-9]){1}$/;
+let regexp_threeIntInString = /^([0-9]){3,}$/;
+
 /***
  * getElementById
  */
@@ -18,15 +22,14 @@ _n = (n) => document.getElementsByName(n);
  */
 _cn = (cn) => document.getElementsByClassName(cn);
 
-addLeadingZero = (e) => {
-  const input = e.target;
-  if (input.value.length === 1) {
-    input.value = "0" + input.value;
-  }
-};
+
+
+addLeadingZero = (e) => e.target.value = twoDigits(e.target.value);
 
 twoDigits = (string) => {
-    if(string.length <= 1){
+    if(regexp_threeIntInString.test(string)) {
+        string = string.replace(/^(0+)/g, '');
+    } else if (regexp_oneIntInString.test(string)) {
         string = string.toString().padStart(2, "0");
     }
 
