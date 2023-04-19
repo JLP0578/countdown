@@ -185,6 +185,8 @@ function updateCountdownPreset() {
     minutesInput.value = twoDigits(minutes);
     secondsInput.value = twoDigits(seconds);
     updateCountPreset();
+
+    return {"minutes": minutes, "seconds": seconds, "input_preset": values};
 }
 function loadPreset() {
     for (let i = 0; i < 6; i++) {
@@ -214,6 +216,8 @@ function updateCountPreset() {
     const seconds = parseInt(secondsInput.value);
     lastRemainingTimeMinutes = minutes;
     lastRemainingTimeSecondes = seconds;
+
+    return {"minutes": minutes, "seconds": seconds};
 }
 
 /* OUTILS */

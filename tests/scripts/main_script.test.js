@@ -1,5 +1,5 @@
 
-function add_DOM_Preset() {
+function add_DOM() {
     let DOM_Preset = `
     <form>
         <div class="box_content">
@@ -30,21 +30,22 @@ function add_DOM_Preset() {
     let container = document.getElementById('container');
     container.innerHTML = DOM_Preset;
     countdownPreset = _id("countdown-preset");
+    minutesInput = _id('minutes');
+    secondsInput = _id('seconds');
 }
 
 QUnit.module("[main_script]: Gen options preset", function () {
     QUnit.test("loadPreset()", function (assert) {
         // Tester avec une valeur valide
-        add_DOM_Preset();
+        add_DOM();
         assert.equal(loadPreset().length, 11, "il doit y avoir un tableau de 11 element HTML <option>");
 
         // Tester avec une valeur invalide
-        add_DOM_Preset();
+        add_DOM();
         assert.notEqual(loadPreset().length, 5, "il doit pas y avoir un tableau de 5 element HTML <option>");
     });
-
     QUnit.test("ajouterOption()", function (assert) {
-        add_DOM_Preset();
+        add_DOM();
 
         // Tester avec une valeur valide
         assert.false(ajouterOption("00:00"), "le retour doit être false");
@@ -61,5 +62,17 @@ QUnit.module("[main_script]: Gen options preset", function () {
         assert.false(ajouterOption("teste"), "le retour doit être false");
         assert.false(ajouterOption("456 ds$"), "le retour doit être false");
         assert.false(ajouterOption("456:ds$"), "le retour doit être false");
+    });
+});
+
+QUnit.module("[main_script]: memory last preset", function () {
+    add_DOM();
+    QUnit.test("updateCountPreset()", function (assert) {
+        let result = {"minutes": 1, "seconds": 0};
+        assert.deepEqual(updateCountPreset(), result, "par default dans le DOM le temps est '01:00'");
+    });
+    QUnit.test("updateCountdownPreset()", function (assert) {
+        let result = {"minutes": "01", "seconds": "00", "input_preset": "01:00"};
+        assert.deepEqual(updateCountdownPreset(), result, "par default dans le DOM le temps est '01:00'");
     });
 });
