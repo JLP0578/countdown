@@ -1,10 +1,14 @@
 let countdownIntervalId;
 let startTime;
-let remainingTime;
-let lastRemainingTimeMinutes;
-let lastRemainingTimeSecondes;
+let remainingTime; 
 let audio;
 let compteurUtilisations;
+
+/* PastValue */
+let lastRemainingTimeMinutes;
+let lastRemainingTimeSecondes;
+
+/* Boolean */
 let isSound;
 
 /* ElementById */
@@ -22,8 +26,8 @@ let soundBtn;
 window.addEventListener("DOMContentLoaded", () => {
     console.info("DOM fully loaded and parsed, start JS");
 
-    muteBtn = document.getElementById('mute-btn');
-    soundBtn = document.getElementById('sound-btn');
+    muteBtn = _id('mute-btn');
+    soundBtn = _id('sound-btn');
 
     muteBtn.addEventListener('click', soundReverse);
     soundBtn.addEventListener('click', soundReverse);
@@ -33,20 +37,20 @@ window.addEventListener("DOMContentLoaded", () => {
     muteBtn.disabled = isSound;
     soundBtn.disabled = !isSound;
 
-    minutesInput = document.getElementById('minutes');
-    secondsInput = document.getElementById('seconds');
+    minutesInput = _id('minutes');
+    secondsInput = _id('seconds');
 
-    startBtn = document.getElementById('start-btn');
-    stopBtn = document.getElementById('stop-btn');
-    resetBtn = document.getElementById('reset-btn');
+    startBtn = _id('start-btn');
+    stopBtn = _id('stop-btn');
+    resetBtn = _id('reset-btn');
 
-    compteurSerie = document.getElementById("compteur-de-serie");
+    compteurSerie = _id("compteur-de-serie");
     compteurUtilisations = 1;
     compteurSerie.innerHTML = compteurUtilisations;
 
-    progressBar = document.getElementById('progress-bar');
+    progressBar = _id('progress-bar');
 
-    countdownPreset = document.getElementById("countdown-preset");
+    countdownPreset = _id("countdown-preset");
     
     minutesInput.addEventListener('input', addLeadingZero);
     secondsInput.addEventListener('input', addLeadingZero);
@@ -144,6 +148,7 @@ function updateCountdown() {
 
 /* PREGRESS BAR */
 function updateProgressBar(totalTime, who) {
+    console.log(totalTime, who);
     if(who == "start") {
         progressBar.style.setProperty("--total-time", `${totalTime}s`);
         progressBar.style.setProperty("--state-play", "running");
@@ -155,8 +160,8 @@ function updateProgressBar(totalTime, who) {
         progressBar.style.setProperty("--total-time", `${totalTime}s`);
         progressBar.style.setProperty("--state-play", "paused");
         progressBar.style.animation = 'none';
-        progressBar.style.animation = null; 
         progressBar.offsetHeight;
+        progressBar.style.animation = null; 
     }
 }
 
@@ -203,13 +208,13 @@ function updateCountPreset() {
 }
 
 /* OUTILS */
-function addLeadingZero(e) {
-    const input = e.target;
-    if (input.value.length === 1) {
-        input.value = '0' + input.value;
-    }
-}
-function twoDigits(string) {
-    return string.toString().padStart(2, '0');
-}
+// function addLeadingZero(e) {
+//     const input = e.target;
+//     if (input.value.length === 1) {
+//         input.value = '0' + input.value;
+//     }
+// }
+// function twoDigits(string) {
+//     return string.toString().padStart(2, '0');
+// }
 
